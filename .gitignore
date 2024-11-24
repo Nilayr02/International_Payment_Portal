@@ -1,0 +1,32 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+
+# Logs
+*.log
+logs/
+
+# Build outputs
+dist/
+build/
+
+# OS specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# npm package locks
+package-lock.json
+
+# Exclude general keys but include our development certificates
+*.pem
+*.key
+!backend/src/keys/ca/*.pem
+!backend/src/keys/ca/*.key
+!backend/src/keys/ca/*.crt
+
+# Environment files
+.env
+.env.development
+.env.test
+.env.production
